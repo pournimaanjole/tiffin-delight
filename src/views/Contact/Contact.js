@@ -1,7 +1,7 @@
 import React from "react";
 import './Contact.css';
 import Navbar from "../../components/Navbar/Navbar";
-import { Navbar2 } from "../../components/Navbar/Navbar";
+import { Navbar3 } from "../../components/Navbar/Navbar";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +29,7 @@ const Contact = () => {
         const temarr = [...send, obj]
         setsend(temarr);
         localStorage.setItem('contact', JSON.stringify(temarr));
-        showToast('message send succesfully', 'success', 3000);
+        showToast('Thanks for sending messege ', 'success', 3000);
         setname('');
         setemial('');
         setmessge('');
@@ -39,7 +39,7 @@ const Contact = () => {
 
     return (<>
         <div>
-            <Navbar2/>
+            <Navbar3/>
             <div className="section">
                 <div className="contact-container">
                     <div className="contact-us">
